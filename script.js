@@ -6,28 +6,32 @@ const display   = document.querySelector(".display");
 
 /* Function to create all buttons of the calculator */
 function createCalculatorButtons() {
-
   // Create buttons 0-9
-  for (let i = 0; i < 10; i++) {
-    let button = document.createElement("button");
-    button.textContent = i;
-    container.appendChild(button);
-  }
-
+  
   // Create operator buttons
-  createButton("+");
-  createButton("-");
-  createButton("x");
-  createButton("÷");
-  createButton("+");
-  createButton("=");
   createButton("clear");
+  createButton(7);
+  createButton(8);
+  createButton(9);
+  createButton("÷");
+  createButton(4);
+  createButton(5);
+  createButton(6);
+  createButton("x");
+  createButton(1);
+  createButton(2);
+  createButton(3);
+  createButton("-");
+  createButton(0);
+  createButton("=");
+  createButton("+");
 }
 
 /* Add button to the DOM */
 function createButton(text) {
   let btn = document.createElement("button");
   btn.textContent = text;
+  btn.classList = "_" + text;
   container.appendChild(btn);
 }
 
@@ -35,15 +39,12 @@ function createButton(text) {
 function add(num1, num2) {
   return num1 + num2;
 }
-
 function subtract(num1, num2) {
   return num1 - num2;
 }
-
 function multiply(num1, num2) {
   return num1 * num2;
 }
-
 function divide(num1, num2) {
   return num1 / num2;
 }

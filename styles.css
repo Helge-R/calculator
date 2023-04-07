@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+}
+
+button._clear {
+  width: 100px;
+  margin-left: auto;
+  color: lightcoral;
+}
+
+button._0 {
+  margin-left: auto;
+}
+
+.display {
+  text-align: center;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 206px;
+  gap: 2px;
+}
